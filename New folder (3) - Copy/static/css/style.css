@@ -1,0 +1,221 @@
+.logout{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    z-index: 1000; 
+}
+.match-badge{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 50;
+  background: #bacdb0ff;
+  color: #866546ff;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-family: Gabriela;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.match-badge:hover{
+  transform: translateY(-1px);
+}
+.ranking{
+  position: absolute;
+  top: 52px;          /* sits under badge */
+  right: 12px;
+  width: 240px;       /* adjust */
+  z-index: 40;
+  display: none;
+  background: #bacdb0ff;
+  color: #2f2a28;
+  padding: 10px 12px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+.ranking.open{
+  display: block;
+}
+.add{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 1000;  
+}
+.delete{
+    position: fixed;
+    top: 5px;
+    left: 70px;
+    z-index: 1000;  
+}
+.content{
+    width:100%;
+     max-width: none !important;
+}
+.filters-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100%;
+    height: fit-content;
+    background-color: #f3e8eeff;
+    color: #6A5754;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding:8px;    
+}
+.form-control{
+    background-color: #bacdb0ff;
+    font-family: Gabriela;
+    font-size: larger;
+}
+.filters-grid .col{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;  
+}
+.ranking{
+    background-color:#bacdb0ff ;
+    width: 15%;
+    padding: 8px;
+}
+.filters-grid .buttons{
+  grid-column: 1 / -1;        /* spans full width of grid */
+  display: flex;
+  justify-content: flex-start; /* or flex-end if you want right aligned */
+  gap: 10px;
+  margin-top: 4px; 
+}
+
+.filters-grid .form-control{
+  width: 100%;
+}
+.filters h4 {
+    margin-bottom: 15px;
+}
+.filters label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.btn{
+    background-color: #866546ff;
+    color: white;
+    border: none;
+    transition: background-color 0.2s ease;
+    font-family: Gabriela;
+    font-size: larger;
+}
+.btn:hover {
+    background-color: #866546ff;
+}
+.scholarship-grid {
+    border: 2px dashed purple;
+}
+.scholarship-left {
+    border: 1px solid red;
+}
+.scholarship-right {
+    border: 1px solid blue;
+}
+.pattern-card {
+    background-color: #bacdb0ff;
+    background-image: url("../background.png");
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 3%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 260px; 
+    gap: 16px;
+    align-items: start;
+    border-color: black;
+    font-family: Gabriela ;
+    transition: transform 0.2s ease;
+    position: relative;
+    
+}
+.details-grid .coldetils{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    width: 100% !important;
+    height: fit-content;
+    background-color: #f3e8eeff;
+    color: #866546ff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding:8px;
+    font-family: Gabriela;
+    font-size: larger;
+    position: relative; 
+    
+    
+}
+.card-right{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;   /* center image/button in right column */
+}
+.patternimage img{
+  width: 100%;
+  
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+.patternimage{
+    width:240px;
+ height: 250px;
+  padding: 10px;
+  background: #f3e8eeff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+    --r: 12px;   /* scallop radius (bigger = deeper scallops) */
+    --s: 26px;   /* scallop spacing (distance between scallops) */
+
+  /* Chrome/Safari/Edge */
+    
+
+  /* Optional: Firefox-compatible (won’t hurt others) */
+    
+
+
+  
+}
+
+.scholarship-type {
+    display: block;
+    font-size: 0.7em;
+    font-weight: normal;
+    color: #866546ff;
+}
+
+
+.scholarship-link {
+    margin-top: 12px;
+    display: inline-block;
+    background-color: #866546ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    align-self: flex-start;
+}
+
+.scholarship-link:hover {
+    background-color: #574543;
+}
